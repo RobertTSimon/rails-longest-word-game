@@ -1,0 +1,29 @@
+@import 'bootstrap';
+// Place all the styles related to the games_controller controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cards {
+  text-align: center;
+  margin-bottom: 24px;
+}
+span {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  background: #33AFFF;
+}
+.form {
+  text-align: center;
+}
+.form-inline {
+  justify-content: center;
+}
+

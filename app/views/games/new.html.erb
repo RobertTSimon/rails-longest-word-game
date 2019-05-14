@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>New Game</h1>
+
+  <div class="cards">
+    <%  @choices.each do |choice|%>
+    <span id="choice"> <%=choice%> </span>
+    <% end %>
+  </div>
+
+<div class="form">
+    <p>What is the longest word that you can find</p>
+    <form class="form-inline" action="/score" method="post">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag "choices", @choices %>
+      <input class="form-control" type="text" name="word" placeholder="Biggest word?">
+      <input class="btn btn-primary" type="submit">
+    </form>
+  </div>
+</div>
+
+
+
+
+
